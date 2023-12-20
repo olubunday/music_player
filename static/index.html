@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Music Player</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-frame">
+            <img src="./images/logo.png" alt="App Logo" class="app-logo">
+        </div>
+        <div class="right-frame">
+            <ul class="playlist" id="playlist">
+                <!-- Populate playlist dynamically using JavaScript -->
+            </ul>
+        </div>
+        <div class="bottom-frame">
+            <button class="control-button" id="playButton">Play</button>
+            <button class="control-button" id="prevButton">Previous</button>
+            <button class="control-button" id="nextButton">Next</button>
+            <button class="control-button" id="pauseButton">Pause</button>
+            <button class="control-button" id="playbackButton">Playback</button>
+            <button class="control-button" id="stopButton">Stop</button>
+        </div>
+        <div class="now-playing">
+            <p id="nowPlaying">Choose a Song</p>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
+
