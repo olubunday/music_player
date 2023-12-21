@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Music Player</title>
+    <link rel="stylesheet" href="../static/styles.css">
+    <script src="../static/app.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="left-frame">
+            <img src="../static/images/logo.jpg" alt="App Logo" class="app-logo">
+        </div>
+        <div class="right-frame">
+            <ul class="playlist" id="playlist">
+                <!-- Populate playlist dynamically using JavaScript -->
+            </ul>
+            <div class="volume-container">
+                <label for="volumeControl">Volume:</label>
+                <input type="range" id="volumeControl" min="0" max="1" step="0.1" value="1" />
+            </div>
+        </div>
+        <div class="bottom-frame">
+            <button class="control-button" id="playButton">
+                <img src="../static/images/play-button.png" alt="Play">
+            </button>
+            <button class="control-button" id="prevButton">
+                <img src="../static/images/rewind-button.png" alt="Previous">
+            </button>
+            <button class="control-button" id="nextButton">
+                <img src="../static/images/forward-button.png" alt="Next">
+            </button>
+            <button class="control-button" id="pauseButton">
+                <img src="../static/images/pause-button.png" alt="Pause">
+            </button>
+            <button class="control-button" id="playbackButton">
+                <img src="../static/images/playback-button.png" alt="Playback">
+            </button>
+            <button class="control-button" id="stopButton">
+                <img src="../static/images/stop-player-button.png" alt="Stop">
+            </button>
+        </div>
+        <div class="now-playing">
+            <p id="nowPlaying">Choose a Song</p>
+        </div>
+    </div>
+</body>
+</html>
