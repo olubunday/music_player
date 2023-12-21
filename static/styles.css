@@ -1,0 +1,97 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    background-color: #ffffff;
+}
+
+.left-frame {
+    background-color: #ffffff;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app-logo {
+    width: 50%;
+    max-width: 1000px;
+    height: auto;
+    padding: 10px;
+}
+
+.right-frame {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.playlist {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow-y: auto;
+    height: 150px;
+}
+
+.playlist-item {
+    padding: 8px;
+    cursor: pointer;
+}
+
+.bottom-frame {
+    background-color: #cfc7f8;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.control-button {
+    background-color: #3c1dc6;
+    color: #ffffff;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.control-button.pressed {
+    background-color: #542bff;
+}
+
+.control-button img {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.volume-container {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+#volumeControl {
+    margin-left: 5px;
+}
+
+.now-playing {
+    background-color: #ffffff;
+    color: #333333;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.now-playing p {
+    margin: 0;
+}
